@@ -13,7 +13,8 @@ class Signup extends React.Component {
         email: '',
         password: '',
         firstName: '',
-        lastName: ''
+        lastName: '',
+        img: 'img'
     };
   }
 
@@ -88,6 +89,10 @@ class Signup extends React.Component {
             <span id="lastName"></span>
             <div className="submit">
               <button id="submit" type="submit" className="btn btn-success">Sign Up</button>
+            </div>
+            <span id="img"></span>
+            <div className="img">
+            <img src={this.state.img}/>
             </div>
           </div>
         </form>

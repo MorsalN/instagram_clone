@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
+import Photo from '../Photo/index.jsx';
 
 class  Feed extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class  Feed extends React.Component {
 
   componentDidMount() {
     const context = this;
-    axios.get('/pictures')
+    axios.get('/pictures/all')
     .then((images) => {
       console.log(images);
       context.setState({
@@ -28,7 +29,7 @@ class  Feed extends React.Component {
 
     return (
       <div>
-        { images.map((image) => <img src={image}/>) }
+        { images.map((image) => <Photo morsal={image}/>) }
      </div>
     )
   }

@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   return res.render('index');
 });
 
-router.get('/photos', isLoggedIn, function(req, res, next) {
+router.get('/photos', function(req, res, next) {
   return res.render('index');
 });
 
