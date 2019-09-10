@@ -1,1 +1,2 @@
-# instagram_clone
+# Instagram Clone
+Cloning Instagram using Javascript. 
